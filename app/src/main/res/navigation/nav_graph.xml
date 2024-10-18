@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/viewPageFragment">
+
+    <dialog
+        android:id="@+id/modalBottomSheet"
+        android:name="com.bootcamp.todoeasy.ui.fragments.modal.ModalBottomSheet"
+        android:label="modal_bottom_sheet"
+        tools:layout="@layout/modal_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/viewPageFragment"
+        android:name="com.bootcamp.todoeasy.ui.viewPage.ViewPageFragment"
+        android:label="ViewPageFragment">
+        <action
+            android:id="@+id/action_viewPageFragment_to_detailTask"
+            app:destination="@id/detailTask" />
+        <action
+            android:id="@+id/action_viewPageFragment_to_detailCategoryActivity"
+            app:destination="@id/detailCategoryActivity" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.bootcamp.todoeasy.ui.fragments.today.TodayFragment"
+        android:label="fragment_today"
+        tools:layout="@layout/fragment_today">
+        <action
+            android:id="@+id/action_todayFragment_to_detailTask"
+            app:destination="@id/detailTask" />
+    </fragment>
+
+    <activity
+        android:id="@+id/detailTask"
+        android:name="com.bootcamp.todoeasy.ui.activitys.detailTask.DetailTaskActivity"
+        android:label="activity_detail_task"
+        tools:layout="@layout/activity_detail_task">
+        <argument
+            android:name="task"
+            app:argType="com.bootcamp.todoeasy.data.models.Task" />
+    </activity>
+
+    <dialog
+        android:id="@+id/categoryDialogFragment"
+        android:name="com.bootcamp.todoeasy.ui.fragments.category.dialogCreateCategory.CategoryDialogFragment"
+        android:label="CategoryDialogFragment" />
+
+    <dialog
+        android:id="@+id/categoryUpdateDialogFragment"
+        android:name="com.bootcamp.todoeasy.ui.fragments.category.dialogUpdateCategory.CategoryUpdateDialogFragment"
+        android:label="CategoryUpdateDialogFragment">
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+    </dialog>
+
+    <activity
+        android:id="@+id/detailCategoryActivity"
+        android:name="com.bootcamp.todoeasy.ui.activitys.detailCategory.DetailCategoryActivity"
+        android:label="activity_detail_category"
+        tools:layout="@layout/activity_detail_category" />
+
+    <dialog
+        android:id="@+id/priorityDialogFragment"
+        android:name="com.bootcamp.todoeasy.ui.fragments.priority.PriorityDialogFragment"
+        android:label="PriorityDialogFragment" >
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+        <argument android:name="taskPriority"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/categoryEditDialogFragment"
+        android:name="com.bootcamp.todoeasy.ui.fragments.category.dialogEditCategory.CategoryEditDialogFragment"
+        android:label="CategoryEditDialogFragment" >
+        <argument
+            android:name="category"
+            app:argType="com.bootcamp.todoeasy.data.models.Category" />
+    </dialog>
+
+
+</navigation>

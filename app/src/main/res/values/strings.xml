@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">TodoEasy</string>
+
+    <!-- Description Card ImageView -->
+    <string name="imageView_card_hour_description">Image for the icon hour task</string>
+    <string name="imageView_card_calendar_description">Image for the task calendar</string>
+    <string name="imageView_card_task_description">Image for priority task</string>
+
+    <!-- Main activity-->
+
+
+    <!-- Today Tasks-->
+    <string name="textView_today_tasks">Today</string>
+
+    <!-- Create Task-->
+    <string name="textView_create_task">Create Task</string>
+    <string name="textView_priority_task">Priority</string>
+    <string name="textView_hour">Hour</string>
+    <string name="textView_date">Date</string>
+    <string name="textView_status">Task Status</string>
+    <string name="label_name_task">Task Name</string>
+    <string name="label_description_task">Task Description</string>
+    <string name="label_category">Task Category</string>
+    <string name="radio_high_priority">High</string>
+    <string name="radio_medium_priority">Medium</string>
+    <string name="radio_low_priority">Low</string>
+    <string name="error_text">Required Field</string>
+    <string name="error_empty_field">"The Field %1$s is Empty"</string>
+    <string name="create_task_completed">Task Successfully Created</string>
+    <string name="textMaxLength">40</string>
+    <!-- Description -->
+    <string name="description_close_task">Close create task</string>
+    <string name="description_imageView_low">ImageView for radio button low priority</string>
+    <string name="description_imageView_medium">Image View for radio button Medium priority</string>
+    <string name="description_imageView_high">Description radio button high priority</string>
+    <string name="description_imageButton_hour">Image view alarm icon for hour</string>
+    <string name="description_imageButton_date">ImageView calendar icon for task date</string>
+
+
+    <string name="search_toolbar">Search</string>
+    <string name="tab_today">Today</string>
+    <string name="tab_weekly">Weekly</string>
+    <string name="tab_month">Month</string>
+    <string name="hide_completed">Hide Tasks Completed</string>
+    <string name="task_deleted_success">The task was deleted with success!</string>
+    <string name="task_today_completed">Congratulations!! One less task for you do today</string>
+    <string name="task_week_completed">Congratulations!! One less task for you do in this Week</string>
+    <string name="task_month_completed">Congratulations!! One less task for you do in this Month</string>
+    <string name="textView_category">Category</string>
+    <string name="textMaxLengthDescription">80</string>
+    <string name="label_name_category">Category Name</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="complete_task">Complete Task</string>
+    <string name="create_category">+ Create New</string>
+    <string name="create_category_dialog">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter">Enter</string>
+    <string name="textView_description">Description</string>
+    <string name="textView_title">Title</string>
+    <string name="expiration_date">Due Date</string>
+    <string name="hour">Time</string>
+    <string name="reminder">Reminder</string>
+    <string name="repeat">Repeat Task</string>
+    <string name="select_category">Update Category</string>
+
+    <string name="finish">Task %1$s finish now %2$s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="task_undo_completed">Task Successfully Undone</string>
+    <string name="textView_detail_category">Category</string>
+    <string name="category_detail">Manage Categories</string>
+    <string name="button_add">+ Create New</string>
+    <string name="button_delete">Delete</string>
+    <string name="category_empty">Select a Category for Delete</string>
+    <string name="category_delete">Category %s was Deleted</string>
+    <string name="label_priority">Task Priority</string>
+    <string name="message_delete">Are you sure you want delete the task</string>
+    <string name="message_delete_category">WARNING!!! Are you sure you want delete the category? All Task with this Category will excluded together</string>
+    <string name="category_deleted_success">The category was deleted with success!</string>
+
+    <string name="message_complete">Are you sure you want complete the task?</string>
+    <string name="message_complete_undone">Are you sure you want undone the task?</string>
+    <string name="complete_task_message">Congratulations, task completed with success!</string>
+    <string name="complete_task_message_undo">Task Undone with Success!</string>
+    <string name="all">All</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="time">Hour</string>
+
+    <string-array name="priorityArray">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>
